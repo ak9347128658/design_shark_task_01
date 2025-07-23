@@ -12,7 +12,6 @@ function page() {
       <MarqueeSection/>
       <Section2/>
       <Section3/>
-      <div className='h-screen'></div>
     </div>
   )
 }
