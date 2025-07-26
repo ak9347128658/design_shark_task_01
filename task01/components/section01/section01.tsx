@@ -3,7 +3,7 @@ import { BG_COLOR_02 } from "@/constants/colors"
 import { gsap } from "gsap"
 import { ArrowUpRight } from "lucide-react"
 import Link from "next/link"
-import { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react"
 import { useInView } from "react-intersection-observer"
 
 // Helper to wrap each letter in a span

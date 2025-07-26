@@ -1,8 +1,8 @@
 "use client";
-import React, { useRef, useEffect } from "react";
-import Image from "next/image";
-import { Play, ArrowRight, ArrowUpRight } from "lucide-react";
 import { gsap } from "gsap";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
+import Image from "next/image";
+import { useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 
 export default function Section2() {

@@ -1,8 +1,9 @@
 "use client";
-import React, { useEffect, useRef } from 'react';
-import { useInView } from 'react-intersection-observer';
-import { gsap } from 'gsap';
 import { BG_COLOR_02 } from '@/constants/colors';
+import { gsap } from 'gsap';
+import { useEffect, useRef } from 'react';
+import Image from 'next/image';
+import { useInView } from 'react-intersection-observer';
 
 // Helper to wrap each letter in a span
 function splitText(text: string) {
@@ -44,7 +45,7 @@ function Section3() {
             );
 
             // Animate counter from 0 to 25 over 5 seconds
-            let start = 0;
+            const start = 0;
             const end = 25;
             const duration = 5000;
             const startTime = performance.now();
@@ -120,10 +121,13 @@ function Section3() {
         <div className="min-h-screen w-full py-6 md:py-10 lg:py-12 relative">
             <div className="flex flex-col items-center">
                 <div className="flex items-center gap-2 md:gap-3">
-                    <img
+                    <Image
                         src="/section01/Group 18.svg"
                         alt="mission-vision-before"
+                        width={48}
+                        height={48}
                         className="w-6 md:w-[2vw]"
+                        priority
                     />
                     <h3
                         ref={headingRef}
@@ -131,10 +135,13 @@ function Section3() {
                     >
                         {splitText("Our Mission & Vision")}
                     </h3>
-                    <img
+                    <Image
                         src="/section01/Group 18.svg"
                         alt="mission-vision-after"
+                        width={48}
+                        height={48}
                         className="w-6 md:w-[2vw]"
+                        priority
                     />
                 </div>
                 <div
@@ -145,16 +152,22 @@ function Section3() {
                 </div>
             </div>
             <div className="relative h-[50vh] md:h-[60vh] lg:h-[80vh] w-full">
-                <img
+                <Image
                     src="/section3/backlines.svg"
                     alt="background"
+                    fill
                     className="w-full h-full object-cover"
+                    style={{ objectFit: 'cover' }}
+                    priority
                 />
-                <img
+                <Image
                     src="/section3/colleges.png"
                     alt="colleges"
-                    className=" college-image w-[95%] md:w-[90%] h-[80%] md:h-[85%] lg:h-[90%] absolute top-2 md:top-0 left-1/2 transform -translate-x-1/2 object-contain"
-                    ref={viewRef}
+                    width={900}
+                    height={600}
+                    className="college-image w-[95%] md:w-[90%] h-[80%] md:h-[85%] lg:h-[90%] absolute top-2 md:top-0 left-1/2 transform -translate-x-1/2 object-contain"
+                    style={{ objectFit: 'contain' }}
+                    priority
                 />
             </div>
             <div className="flex flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 mx-4 md:mx-8 lg:mx-[10vw] mt-4 md:mt-[2vh]">

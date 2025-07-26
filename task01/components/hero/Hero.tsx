@@ -1,10 +1,9 @@
 "use client";
-import React, { useEffect, useRef } from 'react';
-import Image from 'next/image';
 import { gsap } from 'gsap';
-import styles from "./Hero.module.css";
-import Navbar01 from '../navbars/Navbar01';
 import { ArrowUpRight } from 'lucide-react';
+import Image from 'next/image';
+import { useEffect, useRef } from 'react';
+import Navbar01 from '../navbars/Navbar01';
 
 function Hero() {
   const personRef = useRef<HTMLDivElement>(null);
