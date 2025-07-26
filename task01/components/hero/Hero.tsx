@@ -206,9 +206,11 @@ function Hero() {
             className='hidden md:block absolute bottom-[28vh] ml-25'
             ref={arrowRef}
           />
-          <img
+          <Image
             src="/hero/hero_person01_bg.svg"
             alt="Person Background"
+            width={1000}
+            height={1000}
             className="hidden md:block -z-5 object-fill relative -bottom-35 h-[100vh] w-[70vw]"
           />
           <div ref={personRef} className="hidden md:block absolute bottom-0 left-[33vw] h-[100vh] w-full md:w-[85%]">

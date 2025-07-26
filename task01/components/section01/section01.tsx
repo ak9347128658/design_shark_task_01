@@ -3,6 +3,7 @@ import { BG_COLOR_02 } from "@/constants/colors"
 import { gsap } from "gsap"
 import { ArrowUpRight } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import { useEffect, useRef } from "react"
 import { useInView } from "react-intersection-observer"
 
@@ -151,11 +152,11 @@ export default function Section01() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-[100px]">
                 <div className="text-center max-w-4xl mx-auto mb-6 sm:mb-8 lg:mb-12">
                     <div className="inline-flex items-center space-x-2 mb-2 sm:mb-4">
-                        <img src="/section01/Group 18.svg" alt="Yellow Chevron" className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16" />
+                        <Image src="/section01/Group 18.svg" alt="Yellow Chevron" width={48} height={48} className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16" />
                         <span ref={welcomeRef} className="text-xl sm:text-2xl lg:text-3xl font-semibold text-black">
                             {splitText("Welcome to SEO Agency")}
                         </span>
-                        <img src="/section01/Group 18.svg" alt="Yellow Chevron" className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16" />
+                        <Image src="/section01/Group 18.svg" alt="Yellow Chevron" width={48} height={48} className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16" />
                     </div>
                     <h2 ref={mainHeadingRef} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-black leading-tight">
                         {splitText("Comprehensive SEO & Digital Marketing Solutions.")}
@@ -206,19 +207,23 @@ export default function Section01() {
 
                     <div className="lg:col-span-7 relative min-h-[200px] sm:min-h-[300px] lg:min-h-[400px] xl:min-h-[600px] w-full h-full flex items-center justify-center mt-6 sm:mt-0">
                         <div className="relative w-[35%] h-full">
-                            <img
-                                ref={person2Ref}
+                            <Image
+                                ref={(el) => { if (el) person2Ref.current = el; }}
                                 src="/section01/person2.webp"
                                 alt="Person working on laptop"
+                                width={500}
+                                height={500}
                                 className="absolute w-full h-full object-fill shadow-lg z-20"
                             />
                         </div>
                         <div className="relative w-[65%] h-full flex flex-col">
                             <div className="relative w-full h-[50%] flex items-center justify-center">
                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] sm:w-[80%] lg:w-[80%] h-auto z-10 flex items-center justify-center">
-                                    <img
+                                    <Image
                                         src="/section01/Group 17.png"
                                         alt="Build a Brand Success with Saor 02"
+                                        width={1000}
+                                        height={1000}
                                         className="absolute w-[50vw]"
                                     />
                                     <div className="inset-0 flex items-center justify-center">
@@ -231,10 +236,12 @@ export default function Section01() {
                                 </div>
                             </div>
                             <div className="relative w-full h-[50%] p-5 box-border">
-                                <img
-                                    ref={person3Ref}
+                                <Image
+                                    ref={(el) => { if (el) person3Ref.current = el; }}
                                     src="/section01/person3.webp"
                                     alt="Team discussing charts"
+                                    width={1000}
+                                    height={1000}
                                     className="absolute w-full h-full object-fill shadow-lg z-20"
                                 />
                             </div>
@@ -248,21 +255,21 @@ export default function Section01() {
                         <p className="text-gray-600 text-sm sm:text-base">Successful Project</p>
                     </div>
                     <div className="hidden lg:block">
-                        <img src="/section01/Group 19.svg" className="w-[4vw] mx-auto" />
+                        <Image src="/section01/Group 19.svg" alt="Divider" width={40} height={40} className="w-[4vw] mx-auto" />
                     </div>
                     <div>
                         <h3 ref={teamCountRef} className="text-3xl sm:text-4xl lg:text-5xl font-bold">0</h3>
                         <p className="text-gray-600 text-sm sm:text-base">Experienced Team</p>
                     </div>
                     <div className="hidden lg:block">
-                        <img src="/section01/Group 19.svg" className="w-[4vw] mx-auto" />
+                        <Image src="/section01/Group 19.svg" alt="Divider" width={40} height={40} className="w-[4vw] mx-auto" />
                     </div>
                     <div>
                         <h3 ref={customerCountRef} className="text-3xl sm:text-4xl lg:text-5xl font-bold">0</h3>
                         <p className="text-gray-600 text-sm sm:text-base">Happy Customers</p>
                     </div>
                     <div className="hidden lg:block">
-                        <img src="/section01/Group 19.svg" className="w-[4vw] mx-auto" />
+                        <Image src="/section01/Group 19.svg" alt="Divider" width={40} height={40} className="w-[4vw] mx-auto" />
                     </div>
                     <div>
                         <h3 ref={reviewCountRef} className="text-3xl sm:text-4xl lg:text-5xl font-bold">0</h3>

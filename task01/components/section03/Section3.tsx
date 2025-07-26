@@ -19,7 +19,7 @@ function splitText(text: string) {
 }
 
 function Section3() {
-    const { ref: viewRef, inView } = useInView({
+    const { ref, inView } = useInView({
         triggerOnce: true,
         threshold: 0.1,
     });
@@ -118,7 +118,7 @@ function Section3() {
     }, [inView]);
 
     return (
-        <div className="min-h-screen w-full py-6 md:py-10 lg:py-12 relative">
+        <div ref={ref} className="min-h-screen w-full py-6 md:py-10 lg:py-12 relative">
             <div className="flex flex-col items-center">
                 <div className="flex items-center gap-2 md:gap-3">
                     <Image

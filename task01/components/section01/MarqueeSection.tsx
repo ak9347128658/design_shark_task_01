@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { BG_COLOR_02 } from '@/constants/colors';
+import Image from 'next/image';
 
 function MarqueeSection() {
     const marqueeRef = useRef<HTMLDivElement>(null);
@@ -51,19 +52,19 @@ function MarqueeSection() {
                     {/* First instance of content */}
                     <div className="flex items-center">
                         <span className="w-[30px] mx-4">
-                            <img src="/marquee/marquee_star.svg" alt="marquee_star" className="w-full h-full" />
+                            <Image src="/marquee/marquee_star.svg" alt="marquee_star" width={30} height={30} className="w-full h-full" />
                         </span>
                         <span className="text-black text-3xl font-semibold mx-4">Monitoring Business Analytics</span>
                         <span className="w-[30px] mx-4">
-                            <img src="/marquee/marquee_star.svg" alt="marquee_star" className="w-full h-full" />
+                            <Image src="/marquee/marquee_star.svg" alt="marquee_star" width={30} height={30} className="w-full h-full" />
                         </span>
                         <span className="text-black text-3xl font-semibold mx-4">Marketing Solutions</span>
                         <span className="w-[30px] mx-4">
-                            <img src="/marquee/marquee_star.svg" alt="marquee_star" className="w-full h-full" />
+                            <Image src="/marquee/marquee_star.svg" alt="marquee_star" width={30} height={30} className="w-full h-full" />
                         </span>
                         <span className="text-black text-3xl font-semibold mx-4">SEO Strategy Development</span>
                         <span className="w-[30px] mx-4">
-                            <img src="/marquee/marquee_star.svg" alt="marquee_star" className="w-full h-full" />
+                            <Image src="/marquee/marquee_star.svg" alt="marquee_star" width={30} height={30} className="w-full h-full" />
                         </span>
                         <span className="text-black text-3xl font-semibold mx-4">Research & Analysis</span>
                     </div>
@@ -72,15 +73,15 @@ function MarqueeSection() {
                     <div className="flex items-center ml-4"> {/* Small gap for continuity */}
                         <span className="text-black text-3xl font-semibold mx-4">Monitoring Business Analytics</span>
                         <span className="w-[30px] mx-4">
-                            <img src="/marquee/marquee_star.svg" alt="marquee_star" className="w-full h-full" />
+                            <Image src="/marquee/marquee_star.svg" alt="marquee_star" width={30} height={30} className="w-full h-full" />
                         </span>
                         <span className="text-black text-3xl font-semibold mx-4">Marketing Solutions</span>
                         <span className="w-[30px] mx-4">
-                            <img src="/marquee/marquee_star.svg" alt="marquee_star" className="w-full h-full" />
+                            <Image src="/marquee/marquee_star.svg" alt="marquee_star" width={30} height={30} className="w-full h-full" />
                         </span>
                         <span className="text-black text-3xl font-semibold mx-4">SEO Strategy Development</span>
                         <span className="w-[30px] mx-4">
-                            <img src="/marquee/marquee_star.svg" alt="marquee_star" className="w-full h-full" />
+                            <Image src="/marquee/marquee_star.svg" alt="marquee_star" width={30} height={30} className="w-full h-full" />
                         </span>
                         <span className="text-black text-3xl font-semibold mx-4">Research & Analysis</span>
                     </div>

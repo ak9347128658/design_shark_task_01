@@ -58,7 +58,7 @@ export default function Section2() {
                         ref={servicesRef}
                         className="flex items-center text-lg font-medium text-gray-700 mb-4"
                     >
-                        <img src={"/section01/Group 18.svg"} alt="Group 18.svg" className={`w-[2vw]`} />
+                        <Image src={"/section01/Group 18.svg"} alt="Group 18.svg" width={30} height={30} className={`w-[2vw]`} />
                         Our Services
                     </div>
                     <h2
